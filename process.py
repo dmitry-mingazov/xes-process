@@ -43,7 +43,7 @@ def process(directory: Path):
 def cluster_dir(directory: Path):
     xes_files = [f for f in directory.iterdir() if f.suffix == '.xes']
     if len(xes_files) < MIN_SAMPLES:
-        print(f"Skipping {directory} because it has less than 3 xes files")
+        print(f"Skipping {directory} because it has less than {MIN_SAMPLES} xes files")
         return
     try:
         shutil.rmtree(XES_INPUT)
