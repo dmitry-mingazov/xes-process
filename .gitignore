@@ -1,0 +1,12 @@
+clusters*
+test*
+debug*
+.vscode
+__pycache__
+
+*.zip
+*.xes
+*.png
+
+input
+output
